@@ -5,21 +5,21 @@
 class IbooksNotesExporter < Formula
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/57uff3r/ibooks_notes_exporter/releases/download/v0.0.1/ibooks_notes_exporter_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "b4c1c8dbe2283862cdb02a0e8fbbeda5dc98cf550bfa598f4e4e1ef05933ba9d"
+      url "https://github.com/57uff3r/ibooks_notes_exporter/releases/download/v0.0.2/ibooks_notes_exporter_0.0.2_Darwin_arm64.tar.gz"
+      sha256 "daf76ac851e925c4bf01c691551216cee2d28e26e0a52e618339062c32aebbbe"
 
       def install
         bin.install "ibooks_notes_exporter"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/57uff3r/ibooks_notes_exporter/releases/download/v0.0.1/ibooks_notes_exporter_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "f70553e0c81056d1aef98c65f514d813e9cdf5aae935309e9cdc8168fd9eea1e"
+      url "https://github.com/57uff3r/ibooks_notes_exporter/releases/download/v0.0.2/ibooks_notes_exporter_0.0.2_Darwin_x86_64.tar.gz"
+      sha256 "b337af8ab700018348097b236a179df17aaf280b1f3501a5eac749fb71b787a0"
 
       def install
         bin.install "ibooks_notes_exporter"
